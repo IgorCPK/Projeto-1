@@ -80,10 +80,12 @@ float Poligono::Area(){
   float soma1 = 0, soma2 = 0;
   int i = 0;
 
-  for(i = 0; i+1 <= cont; i++){
+  for(i = 0; i+1 < cont; i++){
       soma1 = soma1 + N[i].getX() * N[i+1].getY();
       soma2 = soma2 + N[i].getY() * N[i+1].getX();
     }
+    soma1 = soma1 + N[cont-1].getX() * N[0].getY();
+    soma2 = soma2 + N[cont-1].getY() * N[0].getX();
     return (soma2 - soma1)/2;
 }
 
@@ -111,9 +113,7 @@ void Poligono::translada(float _a, float _b){
 */
 
 void Poligono::rotacao(float teta, float x0, float y0){
-	float modulo=0;
-	for(int i = 0;i<cont;i++){
-		modulo = sqrt(pow(x0-N[i].getX(),2)+pow(y0-N[i].getY(),2));
-		N[i].setXY(modulo*cos(teta*PI/180.0),modulo*sin(teta*PI/180.0));
+    for(int i = 0;i<cont;i++){
+        N[i].setXY((N[i].getX()-x0)*cos(teta*PI/180.0)-(N[i].getY()-y0)*sin(teta*PI/180.0),(N[i].getX()-x0)*sin(teta*PI/180.0)+(N[i].getY()-y0)*cos(teta*PI/180.0));
 	}
 }

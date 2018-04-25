@@ -16,7 +16,7 @@ Retangulo::Retangulo(float x, float y, float _largura, float _altura){
     Ponto aux1(x,y),aux2(x+largura,y),aux3(x,y-altura),aux4(x+largura,y-altura);
     AddVert(aux1);
     AddVert(aux2);
-    AddVert(aux3);
     AddVert(aux4);
+    AddVert(aux3);
 
 }
