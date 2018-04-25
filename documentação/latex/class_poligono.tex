@@ -1,0 +1,119 @@
+\hypertarget{class_poligono}{}\section{Poligono Class Reference}
+\label{class_poligono}\index{Poligono@{Poligono}}
+
+
+{\ttfamily \#include $<$poligono.\+h$>$}
+
+Inheritance diagram for Poligono\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_poligono}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_poligono_a9311a9a1496878c09c8508b3636e2870}{Poligono}} ()
+\item 
+int \mbox{\hyperlink{class_poligono_a345539e8cc714d4e429c92fbfbb825d6}{Contador}} ()
+\begin{DoxyCompactList}\small\item\em Um contador básico. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_poligono_a0e4a1dda914bb96506976c0ff2f17f23}{vertices}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o numero de vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_ae1be40b54bc95099e1296e156b246881}{Add\+Vert}} (\mbox{\hyperlink{class_ponto}{Ponto}} \+\_\+x)
+\begin{DoxyCompactList}\small\item\em Adiciona vertice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_ac22d76a087d08ea82627be416404ae15}{print}} ()
+\begin{DoxyCompactList}\small\item\em Imprime os pontos dos vertices. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_poligono_a15cc3e743e4347d966ba12fa2cdb69b7}{Area}} ()
+\begin{DoxyCompactList}\small\item\em Retorna a area do poligono. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_aafacd43b0918e0765fbb42d9aad5bb35}{translada}} (float \+\_\+a, float \+\_\+b)
+\begin{DoxyCompactList}\small\item\em translada o poligono de +a e +b. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_poligono_a487911a74fc40ea3cdea61380889e180}{rotacao}} (float teta, float x0, float y0)
+\begin{DoxyCompactList}\small\item\em rotaciona o poligono \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_poligono_a9311a9a1496878c09c8508b3636e2870}\label{class_poligono_a9311a9a1496878c09c8508b3636e2870}} 
+\index{Poligono@{Poligono}!Poligono@{Poligono}}
+\index{Poligono@{Poligono}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{Poligono()}{Poligono()}}
+{\footnotesize\ttfamily Poligono\+::\+Poligono (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_poligono_ae1be40b54bc95099e1296e156b246881}\label{class_poligono_ae1be40b54bc95099e1296e156b246881}} 
+\index{Poligono@{Poligono}!Add\+Vert@{Add\+Vert}}
+\index{Add\+Vert@{Add\+Vert}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{Add\+Vert()}{AddVert()}}
+{\footnotesize\ttfamily void Poligono\+::\+Add\+Vert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ponto}{Ponto}}}]{\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+Adiciona vertice. 
+
+A função adiciona adiciona um vertice no ponto dado como argumento, e soma +1 no contador. \mbox{\Hypertarget{class_poligono_a15cc3e743e4347d966ba12fa2cdb69b7}\label{class_poligono_a15cc3e743e4347d966ba12fa2cdb69b7}} 
+\index{Poligono@{Poligono}!Area@{Area}}
+\index{Area@{Area}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{Area()}{Area()}}
+{\footnotesize\ttfamily float Poligono\+::\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna a area do poligono. 
+
+Retorna a area do poligono usando somas e subtracoes. \mbox{\Hypertarget{class_poligono_a345539e8cc714d4e429c92fbfbb825d6}\label{class_poligono_a345539e8cc714d4e429c92fbfbb825d6}} 
+\index{Poligono@{Poligono}!Contador@{Contador}}
+\index{Contador@{Contador}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{Contador()}{Contador()}}
+{\footnotesize\ttfamily int Poligono\+::\+Contador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Um contador básico. 
+
+Contador utilizado para contar o numero de vertices \mbox{\Hypertarget{class_poligono_ac22d76a087d08ea82627be416404ae15}\label{class_poligono_ac22d76a087d08ea82627be416404ae15}} 
+\index{Poligono@{Poligono}!print@{print}}
+\index{print@{print}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Poligono\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprime os pontos dos vertices. 
+
+Imprime cada um dos vertices do poligono no formato (x,y)-\/$>$(a,b). \mbox{\Hypertarget{class_poligono_a487911a74fc40ea3cdea61380889e180}\label{class_poligono_a487911a74fc40ea3cdea61380889e180}} 
+\index{Poligono@{Poligono}!rotacao@{rotacao}}
+\index{rotacao@{rotacao}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{rotacao()}{rotacao()}}
+{\footnotesize\ttfamily void Poligono\+::rotacao (\begin{DoxyParamCaption}\item[{float}]{teta,  }\item[{float}]{x0,  }\item[{float}]{y0 }\end{DoxyParamCaption})}
+
+
+
+rotaciona o poligono 
+
+rotaciona o poligono de um angulo dado como argumento. \mbox{\Hypertarget{class_poligono_aafacd43b0918e0765fbb42d9aad5bb35}\label{class_poligono_aafacd43b0918e0765fbb42d9aad5bb35}} 
+\index{Poligono@{Poligono}!translada@{translada}}
+\index{translada@{translada}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{translada()}{translada()}}
+{\footnotesize\ttfamily void Poligono\+::translada (\begin{DoxyParamCaption}\item[{float}]{\+\_\+a,  }\item[{float}]{\+\_\+b }\end{DoxyParamCaption})}
+
+
+
+translada o poligono de +a e +b. 
+
+Soma os argumentos \+\_\+a e \+\_\+b nos valores do poligono, alterando sua localizacao \mbox{\Hypertarget{class_poligono_a0e4a1dda914bb96506976c0ff2f17f23}\label{class_poligono_a0e4a1dda914bb96506976c0ff2f17f23}} 
+\index{Poligono@{Poligono}!vertices@{vertices}}
+\index{vertices@{vertices}!Poligono@{Poligono}}
+\subsubsection{\texorpdfstring{vertices()}{vertices()}}
+{\footnotesize\ttfamily int Poligono\+::vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retorna o numero de vertices. 
+
+Retorna o valor do contador de vertices 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Adamstor Pequeno/\+Documents/\+Projeto1/\mbox{\hyperlink{poligono_8h}{poligono.\+h}}\item 
+C\+:/\+Users/\+Adamstor Pequeno/\+Documents/\+Projeto1/\mbox{\hyperlink{poligono_8cpp}{poligono.\+cpp}}\end{DoxyCompactItemize}
